@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Syllabus | Study Portal</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7ff;
+    color: #172033;
+}
+
+/* HEADER */
+
+.header {
+    background: linear-gradient(135deg, #5b21b6, #2563eb, #06b6d4);
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(37,99,235,.2);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fef08a;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #eef2ff, #e0f2fe, #fdf4ff);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #4f46e5, #0891b2, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #6b7280;
+    font-size: 17px;
+}
+
+/* COURSES */
+
+.courses {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px 30px;
+    text-decoration: none;
+    color: #172033;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+    border: 1px solid #e5e7eb;
+
+    transition: .3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.14);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.course-card h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #6b7280;
+    margin-bottom: 18px;
+}
+
+.open {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* DIFFERENT COLORS */
+
+.bcom {
+    border-top: 6px solid #7c3aed;
+}
+
+.mcom {
+    border-top: 6px solid #2563eb;
+}
+
+.ba {
+    border-top: 6px solid #f97316;
+}
+
+.ma {
+    border-top: 6px solid #10b981;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 70px;
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer strong {
+    color: white;
+}
+
+/* MOBILE */
+
+@media(max-width:700px) {
+
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 17px 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .courses {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+        📚 Study Portal
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>📋 Syllabus</h1>
+
+    <p>
+        Select your course to view semester-wise syllabus.
+    </p>
+
+</section>
+
+
+<section class="courses">
+
+
+    <!-- B.COM -->
+
+    <a href="bcom-syllabus.html" class="course-card bcom">
+
+        <div class="icon">
+            💼
+        </div>
+
+        <h2>
+            B.COM
+        </h2>
+
+        <p>
+            Bachelor of Commerce
+        </p>
+
+        <span class="open">
+            View Semesters →
+        </span>
+
+    </a>
+
+
+    <!-- M.COM -->
+
+    <a href="mcom-syllabus.html" class="course-card mcom">
+
+        <div class="icon">
+            📊
+        </div>
+
+        <h2>
+            M.COM
+        </h2>
+
+        <p>
+            Master of Commerce
+        </p>
+
+        <span class="open">
+            View Semesters →
+        </span>
+
+    </a>
+
+
+    <!-- BA -->
+
+    <a href="ba-syllabus.html" class="course-card ba">
+
+        <div class="icon">
+            📖
