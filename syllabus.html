@@ -18,24 +18,24 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7ff;
-    color: #172033;
+    background: #f5f7fb;
+    color: #1f2937;
 }
 
 /* HEADER */
 
 .header {
-    background: linear-gradient(135deg, #5b21b6, #2563eb, #06b6d4);
+    background: #1e293b;
     color: white;
     padding: 18px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 5px 20px rgba(37,99,235,.2);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -47,11 +47,11 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 nav a:hover {
-    color: #fef08a;
+    color: #93c5fd;
 }
 
 
@@ -59,20 +59,18 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #eef2ff, #e0f2fe, #fdf4ff);
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #eaf2ff, #f8fbff);
 }
 
 .hero h1 {
-    font-size: 42px;
-    margin-bottom: 12px;
-    background: linear-gradient(90deg, #4f46e5, #0891b2, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    color: #6b7280;
+    color: #64748b;
     font-size: 17px;
 }
 
@@ -80,86 +78,90 @@ nav a:hover {
 /* COURSES */
 
 .courses {
-    max-width: 1100px;
-    margin: 50px auto;
+    max-width: 1000px;
+    margin: 45px auto;
     padding: 0 20px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 24px;
 }
+
+
+/* CARD */
 
 .course-card {
     background: white;
-    border-radius: 20px;
-    padding: 35px 30px;
+    border-radius: 16px;
+    padding: 28px;
     text-decoration: none;
-    color: #172033;
+    color: #1f2937;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    border: 1px solid #e2e8f0;
 
-    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 18px rgba(15,23,42,0.07);
 
-    transition: .3s;
+    transition: 0.25s;
 }
 
 .course-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 40px rgba(0,0,0,.14);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(15,23,42,0.12);
 }
 
 .icon {
-    font-size: 45px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 12px;
 }
 
 .course-card h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 7px;
+    color: #1e293b;
 }
 
 .course-card p {
-    color: #6b7280;
-    margin-bottom: 18px;
+    color: #64748b;
+    margin-bottom: 16px;
 }
 
 .open {
-    font-weight: bold;
     color: #2563eb;
+    font-weight: bold;
 }
 
 
-/* DIFFERENT COLORS */
+/* SMALL TOP COLORS */
 
 .bcom {
-    border-top: 6px solid #7c3aed;
+    border-top: 5px solid #2563eb;
 }
 
 .mcom {
-    border-top: 6px solid #2563eb;
+    border-top: 5px solid #7c3aed;
 }
 
 .ba {
-    border-top: 6px solid #f97316;
+    border-top: 5px solid #0891b2;
 }
 
 .ma {
-    border-top: 6px solid #10b981;
+    border-top: 5px solid #059669;
 }
 
 
 /* FOOTER */
 
 footer {
-    margin-top: 70px;
-    background: #111827;
-    color: #d1d5db;
+    margin-top: 60px;
+    background: #1e293b;
+    color: #cbd5e1;
     text-align: center;
-    padding: 30px 20px;
+    padding: 25px 15px;
 }
 
-footer strong {
-    color: white;
+footer p {
+    font-size: 14px;
 }
 
 
@@ -174,11 +176,11 @@ footer strong {
     }
 
     nav {
-        gap: 15px;
+        gap: 16px;
     }
 
     .hero h1 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .courses {
@@ -240,16 +242,14 @@ footer strong {
             💼
         </div>
 
-        <h2>
-            B.COM
-        </h2>
+        <h2>B.Com</h2>
 
         <p>
             Bachelor of Commerce
         </p>
 
         <span class="open">
-            View Semesters →
+            Semester 1–6 →
         </span>
 
     </a>
@@ -263,16 +263,14 @@ footer strong {
             📊
         </div>
 
-        <h2>
-            M.COM
-        </h2>
+        <h2>M.Com</h2>
 
         <p>
             Master of Commerce
         </p>
 
         <span class="open">
-            View Semesters →
+            Semester 1–4 →
         </span>
 
     </a>
@@ -286,16 +284,14 @@ footer strong {
             📖
         </div>
 
-        <h2>
-            B.A.
-        </h2>
+        <h2>B.A.</h2>
 
         <p>
             Bachelor of Arts
         </p>
 
         <span class="open">
-            View Semesters →
+            Semester 1–6 →
         </span>
 
     </a>
@@ -309,16 +305,14 @@ footer strong {
             🎓
         </div>
 
-        <h2>
-            M.A.
-        </h2>
+        <h2>M.A.</h2>
 
         <p>
             Master of Arts
         </p>
 
         <span class="open">
-            View Semesters →
+            Semester 1–4 →
         </span>
 
     </a>
@@ -332,7 +326,7 @@ footer strong {
 <footer>
 
     <p>
-        © 2026 <strong>Study Portal</strong>. All Rights Reserved.
+        © 2026 Study Portal. All Rights Reserved.
     </p>
 
 </footer>
