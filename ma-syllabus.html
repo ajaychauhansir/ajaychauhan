@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MA Syllabus | Study Portal</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #172033;
+}
+
+.header {
+    background: linear-gradient(135deg, #059669, #0d9488, #06b6d4);
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #ecfdf5, #cffafe);
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #059669;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #6b7280;
+}
+
+.semesters {
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.semester {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #172033;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    border-left: 6px solid #10b981;
+    transition: .3s;
+}
+
+.semester:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.12);
+}
+
+.semester h2 {
+    color: #059669;
+    margin-bottom: 7px;
+}
+
+.semester p {
+    color: #6b7280;
+}
+
+footer {
+    margin-top: 70px;
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width:650px) {
+
+    .header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .semesters {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        📚 Study Portal
+    </div>
+
+    <nav>
+        <a href="syllabus.html">← Syllabus</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>🎓 MA</h1>
+
+    <p>
+        Master of Arts — Semester-wise Syllabus
+    </p>
+
+</section>
+
+
+<section class="semesters">
+
+    <a href="#" class="semester">
+        <h2>Semester 1</h2>
+        <p>View MA Semester 1 Syllabus →</p>
+    </a>
+
+    <a href="#" class="semester">
+        <h2>Semester 2</h2>
+        <p>View MA Semester 2 Syllabus →</p>
+    </a>
+
+    <a href="#" class="semester">
+        <h2>Semester 3</h2>
+        <p>View MA Semester 3 Syllabus →</p>
+    </a>
+
+    <a href="#" class="semester">
+        <h2>Semester 4</h2>
+        <p>View MA Semester 4 Syllabus →</p>
+    </a>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 Study Portal. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
