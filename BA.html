@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>B.A. | Study Portal</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #00695c, #009688);
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.back {
+    display: inline-block;
+    text-decoration: none;
+    background: #222;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.semester {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    overflow: hidden;
+}
+
+.semester button {
+    width: 100%;
+    border: none;
+    background: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #00695c;
+}
+
+.semester button:hover {
+    background: #e0f2f1;
+}
+
+.subjects {
+    display: none;
+    padding: 0 20px 20px 20px;
+}
+
+.subject {
+    background: #f7f7f7;
+    margin-top: 10px;
+    padding: 13px;
+    border-radius: 8px;
+    border-left: 5px solid #009688;
+}
+
+.subject strong {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>B.A. Study Material</h1>
+
+<p>Bachelor of Arts | Semester 1 to 6</p>
+
+</header>
+
+
+<div class="container">
+
+<a href="../index.html" class="back">← Back to Home</a>
+
+
+<!-- SEMESTER 1 -->
+
+<div class="semester">
+
+<button onclick="toggleSemester('sem1')">
+Semester 1 ▾
+</button>
+
+<div class="subjects" id="sem1">
+
+<div class="subject">
+<strong>Subject 1</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 2</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 3</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 4</strong>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEMESTER 2 -->
+
+<div class="semester">
+
+<button onclick="toggleSemester('sem2')">
+Semester 2 ▾
+</button>
+
+<div class="subjects" id="sem2">
+
+<div class="subject">
+<strong>Subject 1</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 2</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 3</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 4</strong>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEMESTER 3 -->
+
+<div class="semester">
+
+<button onclick="toggleSemester('sem3')">
+Semester 3 ▾
+</button>
+
+<div class="subjects" id="sem3">
+
+<div class="subject">
+<strong>Subject 1</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 2</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 3</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 4</strong>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEMESTER 4 -->
+
+<div class="semester">
+
+<button onclick="toggleSemester('sem4')">
+Semester 4 ▾
+</button>
+
+<div class="subjects" id="sem4">
+
+<div class="subject">
+<strong>Subject 1</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 2</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 3</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 4</strong>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEMESTER 5 -->
+
+<div class="semester">
+
+<button onclick="toggleSemester('sem5')">
+Semester 5 ▾
+</button>
+
+<div class="subjects" id="sem5">
+
+<div class="subject">
+<strong>Subject 1</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 2</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 3</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 4</strong>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEMESTER 6 -->
+
+<div class="semester">
+
+<button onclick="toggleSemester('sem6')">
+Semester 6 ▾
+</button>
+
+<div class="subjects" id="sem6">
+
+<div class="subject">
+<strong>Subject 1</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 2</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 3</strong>
+</div>
+
+<div class="subject">
+<strong>Subject 4</strong>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+© 2026 Study Portal | B.A.
+
+</footer>
+
+
+<script>
+
+function toggleSemester(id) {
+
+    let box = document.getElementById(id);
+
+    if (box.style.display === "block") {
+        box.style.display = "none";
+    } else {
+        box.style.display = "block";
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
