@@ -3,345 +3,512 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google AdSense - DO NOT CHANGE -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2649564729748264"
-         crossorigin="anonymous"></script>
+<!-- Google AdSense - DO NOT CHANGE -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2649564729748264"
+crossorigin="anonymous"></script>
 
-    <title>Study Portal | Study Material & Syllabus</title>
+<title>Study Portal | Study Material & Syllabus</title>
 
-    <meta name="description" content="Study Portal - Study materials, question papers and syllabus for students.">
+<meta name="description" content="Study Portal - Study materials, question papers and syllabus for students.">
 
-    <style>
+<style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f7fb;
-            color: #222;
-            line-height: 1.6;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7ff;
+    color: #222;
+    line-height: 1.6;
+}
 
-        /* HEADER */
+/* HEADER */
 
-        .header {
-            background: linear-gradient(135deg, #111827, #1e3a8a);
-            color: white;
-            padding: 18px 6%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-        }
+.header {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-        }
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
 
-        nav {
-            display: flex;
-            gap: 22px;
-        }
+nav {
+    display: flex;
+    gap: 24px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        nav a:hover {
-            color: #93c5fd;
-        }
+nav a:hover {
+    color: #ffd166;
+}
 
+/* HERO */
 
-        /* HERO */
+.hero {
+    text-align: center;
+    padding: 85px 20px 75px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
 
-        .hero {
-            text-align: center;
-            padding: 75px 20px 65px;
-            background: linear-gradient(135deg, #dbeafe, #eff6ff, #ffffff);
-        }
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
 
-        .hero h1 {
-            font-size: 42px;
-            color: #111827;
-            margin-bottom: 15px;
-        }
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+}
 
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            color: #4b5563;
-            font-size: 17px;
-        }
+/* HERO BUTTON */
 
+.hero-button {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 13px 28px;
+    background: #ffd166;
+    color: #222;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        /* OPTIONS */
+.hero-button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
 
-        .options {
-            max-width: 1100px;
-            margin: 50px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
+/* SECTION TITLE */
 
+.section-title {
+    text-align: center;
+    margin: 50px 20px 25px;
+}
 
-        /* CARD */
+.section-title h2 {
+    font-size: 32px;
+    color: #243b55;
+}
 
-        .card {
-            background: white;
-            padding: 30px 25px;
-            border-radius: 16px;
-            text-decoration: none;
-            color: #222;
-            box-shadow: 0 6px 25px rgba(0,0,0,0.08);
-            border: 1px solid #e5e7eb;
-            transition: 0.3s;
-            display: block;
-        }
+.section-title p {
+    color: #6b7280;
+    margin-top: 8px;
+}
 
-        .card:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.14);
-        }
+/* OPTIONS */
 
-        .card-icon {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+.options {
+    max-width: 1150px;
+    margin: 30px auto 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
 
-        .card h2 {
-            color: #1e3a8a;
-            font-size: 24px;
-            margin-bottom: 12px;
-        }
+/* CARD */
 
-        .card p {
-            color: #6b7280;
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
+.card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+    display: block;
+}
 
-        .card span {
-            display: inline-block;
-            color: #2563eb;
-            font-weight: bold;
-            font-size: 15px;
-        }
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
 
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
 
-        /* FOOTER */
+.card h2 {
+    color: #243b55;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
 
-        footer {
-            margin-top: 70px;
-            background: #111827;
-            color: #d1d5db;
-            text-align: center;
-            padding: 25px 15px;
-        }
+.card p {
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
 
-        footer p {
-            font-size: 14px;
-        }
+.card span {
+    display: inline-block;
+    color: #667eea;
+    font-weight: bold;
+}
 
+/* COURSES */
 
-        /* MOBILE */
+.courses {
+    max-width: 1150px;
+    margin: 0 auto 70px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
-        @media (max-width: 768px) {
+.course-card {
+    padding: 28px 15px;
+    text-align: center;
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
 
-            .header {
-                padding: 16px 20px;
-                flex-direction: column;
-                gap: 12px;
-            }
+.course-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
 
-            .logo {
-                font-size: 22px;
-            }
+.course-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
 
-            nav {
-                gap: 15px;
-            }
+.course-card p {
+    font-size: 14px;
+}
 
-            nav a {
-                font-size: 14px;
-            }
+/* COURSE COLORS */
 
-            .hero {
-                padding: 55px 20px 50px;
-            }
+.bcom {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
 
-            .hero h1 {
-                font-size: 32px;
-            }
+.mcom {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
 
-            .hero p {
-                font-size: 15px;
-            }
+.ba {
+    background: linear-gradient(135deg, #ff8008, #ffc837);
+}
 
-            .options {
-                grid-template-columns: 1fr;
-                margin-top: 35px;
-            }
+.ma {
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+}
 
-            .card {
-                padding: 25px 22px;
-            }
-        }
+/* FOOTER */
 
-    </style>
+footer {
+    background: #141e30;
+    color: #d1d5db;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .courses {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
 
 </head>
-
 
 <body>
 
 
-    <!-- HEADER -->
+<!-- HEADER -->
 
-    <header class="header">
+<header class="header">
 
-        <div class="logo">
-            📚 Study Portal
-        </div>
+<div class="logo">
+📚 Study Portal
+</div>
 
-        <nav>
+<nav>
 
-            <a href="index.html">Home</a>
+<a href="index.html">Home</a>
 
-            <a href="#">About</a>
+<a href="#">About</a>
 
-            <a href="#">Contact</a>
+<a href="#">Contact</a>
 
-        </nav>
+</nav>
 
-    </header>
-
-
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <h1>Welcome to Study Portal</h1>
-
-        <p>
-            Your complete platform for study materials,
-            question papers and syllabus for different courses.
-        </p>
-
-    </section>
+</header>
 
 
+<!-- HERO -->
 
-    <!-- MAIN OPTIONS -->
+<section class="hero">
 
-    <section class="options">
+<h1>Welcome to Study Portal 🎓</h1>
 
+<p>
+Your complete platform for study materials,
+question papers, syllabus and educational resources.
+</p>
 
-        <!-- STUDY MATERIAL -->
+<a href="study-material.html" class="hero-button">
+Explore Study Material →
+</a>
 
-        <a href="study-material.html" class="card">
-
-            <div class="card-icon">
-                📚
-            </div>
-
-            <h2>
-                Study Material
-            </h2>
-
-            <p>
-                Semester-wise and subject-wise
-                study material, notes and PDFs.
-            </p>
-
-            <span>
-                Explore →
-            </span>
-
-        </a>
+</section>
 
 
+<!-- MAIN OPTIONS -->
 
-        <!-- QUESTION PAPERS -->
+<div class="section-title">
 
-        <a href="#" class="card">
+<h2>Explore Our Resources</h2>
 
-            <div class="card-icon">
-                📝
-            </div>
+<p>Everything you need for your academic journey.</p>
 
-            <h2>
-                Question Papers
-            </h2>
-
-            <p>
-                Previous year question papers
-                for different courses and semesters.
-            </p>
-
-            <span>
-                Coming Soon
-            </span>
-
-        </a>
+</div>
 
 
-
-        <!-- SYLLABUS -->
-
-        <a href="syllabus.html" class="card">
-
-            <div class="card-icon">
-                📋
-            </div>
-
-            <h2>
-                Syllabus
-            </h2>
-
-            <p>
-                Course-wise and semester-wise
-                syllabus for students.
-            </p>
-
-            <span>
-                Explore →
-            </span>
-
-        </a>
+<section class="options">
 
 
-    </section>
+<!-- STUDY MATERIAL -->
+
+<a href="study-material.html" class="card">
+
+<div class="card-icon">
+📚
+</div>
+
+<h2>
+Study Material
+</h2>
+
+<p>
+Semester-wise and subject-wise
+study material, notes and PDFs.
+</p>
+
+<span>
+Explore →
+</span>
+
+</a>
 
 
+<!-- QUESTION PAPERS -->
 
-    <!-- FOOTER -->
+<a href="#" class="card">
 
-    <footer>
+<div class="card-icon">
+📝
+</div>
 
-        <p>
-            © 2026 Study Portal. All Rights Reserved.
-        </p>
+<h2>
+Question Papers
+</h2>
 
-    </footer>
+<p>
+Previous year question papers
+for different courses and semesters.
+</p>
+
+<span>
+Coming Soon
+</span>
+
+</a>
+
+
+<!-- SYLLABUS -->
+
+<a href="syllabus.html" class="card">
+
+<div class="card-icon">
+📋
+</div>
+
+<h2>
+Syllabus
+</h2>
+
+<p>
+Course-wise and semester-wise
+syllabus for students.
+</p>
+
+<span>
+Explore →
+</span>
+
+</a>
+
+
+</section>
+
+
+<!-- COURSES -->
+
+<div class="section-title">
+
+<h2>Choose Your Course</h2>
+
+<p>Select your course to explore semesters and subjects.</p>
+
+</div>
+
+
+<section class="courses">
+
+
+<!-- B.COM -->
+
+<a href="BCOM.html" class="course-card bcom">
+
+<h3>B.Com</h3>
+
+<p>Bachelor of Commerce</p>
+
+<p>Semester 1–6</p>
+
+</a>
+
+
+<!-- M.COM -->
+
+<a href="MCOM.html" class="course-card mcom">
+
+<h3>M.Com</h3>
+
+<p>Master of Commerce</p>
+
+<p>Semester 1–4</p>
+
+</a>
+
+
+<!-- B.A. -->
+
+<a href="BA.html" class="course-card ba">
+
+<h3>B.A.</h3>
+
+<p>Bachelor of Arts</p>
+
+<p>Semester 1–6</p>
+
+</a>
+
+
+<!-- M.A. -->
+
+<a href="MA.html" class="course-card ma">
+
+<h3>M.A.</h3>
+
+<p>Master of Arts</p>
+
+<p>Semester 1–4</p>
+
+</a>
+
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Study Portal. All Rights Reserved.
+</p>
+
+</footer>
 
 
 </body>
