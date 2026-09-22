@@ -22,7 +22,6 @@ body {
     color: #1f2937;
 }
 
-
 /* HEADER */
 
 header {
@@ -43,20 +42,16 @@ header p {
     color: #e0e7ff;
 }
 
-
 /* BACK BUTTON */
 
 .back {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-
     background: white;
     color: #3730a3;
-
     text-decoration: none;
     border-radius: 25px;
-
     font-weight: bold;
     font-size: 14px;
 }
@@ -65,7 +60,6 @@ header p {
     background: #e0e7ff;
 }
 
-
 /* CONTAINER */
 
 .container {
@@ -73,7 +67,6 @@ header p {
     margin: 45px auto;
     padding: 0 20px;
 }
-
 
 /* TITLE */
 
@@ -84,4 +77,167 @@ header p {
 
 .section-title h2 {
     font-size: 30px;
-    color: #
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+/* SEMESTER GRID */
+
+.semester-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* SEMESTER CARD */
+
+.semester-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #172554;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+.semester-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    background: #eef2ff;
+}
+
+.semester-card .icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.semester-card h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.semester-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .semester-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>M.Com</h1>
+
+    <p>Master of Commerce | Study Portal</p>
+
+    <a href="../index.html" class="back">
+        ← Back to Home
+    </a>
+
+</header>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>Select Semester</h2>
+
+        <p>Choose your M.Com semester</p>
+
+    </div>
+
+
+    <div class="semester-grid">
+
+
+        <!-- SEMESTER 1 -->
+
+        <a href="Sem-1/index.html" class="semester-card">
+
+            <div class="icon">📘</div>
+
+            <h3>Semester 1</h3>
+
+            <p>M.Com Semester 1</p>
+
+        </a>
+
+
+        <!-- SEMESTER 2 -->
+
+        <a href="Sem-2/index.html" class="semester-card">
+
+            <div class="icon">📗</div>
+
+            <h3>Semester 2</h3>
+
+            <p>M.Com Semester 2</p>
+
+        </a>
+
+
+        <!-- SEMESTER 3 -->
+
+        <a href="Sem-3/index.html" class="semester-card">
+
+            <div class="icon">📕</div>
+
+            <h3>Semester 3</h3>
+
+            <p>M.Com Semester 3</p>
+
+        </a>
+
+
+        <!-- SEMESTER 4 -->
+
+        <a href="Sem-4/index.html" class="semester-card">
+
+            <div class="icon">📙</div>
+
+            <h3>Semester 4</h3>
+
+            <p>M.Com Semester 4</p>
+
+        </a>
+
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
