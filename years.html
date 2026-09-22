@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Question Papers | Study Portal</title>
+
+    <link rel="stylesheet" href="question-papers.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <h1>
+        📚 Question Papers
+    </h1>
+
+    <p>
+        Select the examination year
+    </p>
+
+</header>
+
+
+
+<main class="container">
+
+
+    <a href="javascript:history.back()" class="back">
+        ← Back
+    </a>
+
+
+
+    <div class="page-title">
+
+        <h2 id="pageTitle">
+            Select Year
+        </h2>
+
+        <p>
+            Choose the year of the question paper.
+        </p>
+
+    </div>
+
+
+
+    <!-- ================= YEARS ================= -->
+
+    <div class="semester-grid">
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2012</div>
+            <h3>Question Paper</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2016</div>
+            <h3>Question Paper</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2017</div>
+            <h3>Question Paper</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2018</div>
+            <h3>Question Paper</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2019</div>
+            <h3>Question Paper</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2020</div>
+            <h3>Question Paper</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2021</div>
+            <h3>Question Paper</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2022</div>
+            <h3>Question Paper</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2023</div>
+            <h3>NEP</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2024</div>
+            <h3>NEP</h3>
+        </a>
+
+
+        <a href="#" class="semester-card year-link">
+            <div class="semester-number">2025</div>
+            <h3>NEP</h3>
+        </a>
+
+
+    </div>
+
+
+</main>
+
+
+
+<footer class="footer">
+
+    <p>
+        © 2026 Study Portal | Ajay Chauhan
+    </p>
+
+</footer>
+
+
+
+<script>
+
+    /*
+       ==========================================
+       READ COURSE / SEMESTER / SUBJECT
+       FROM URL
+       ==========================================
+    */
+
+    const params = new URLSearchParams(window.location.search);
+
+    const course = params.get("course") || "";
+    const semester = params.get("semester") || "";
+    const subject = params.get("subject") || "";
+
+
+    /*
+       ==========================================
+       PAGE TITLE
+       ==========================================
+    */
+
+    const pageTitle = document.getElementById("pageTitle");
+
+
+    if (course && semester && subject) {
+
+        pageTitle.textContent =
+            course +
+            " — Semester " +
+            semester +
+            " — Subject " +
+            subject +
+            " — Select Year";
+
+    }
+
+
+    /*
+       ==========================================
+       YEAR LINKS
+       ==========================================
+    */
+
+    const yearLinks =
+        document.querySelectorAll(".year-link");
+
+
+    yearLinks.forEach(function(card) {
+
+        const year =
+            card.querySelector(".semester-number").textContent.trim();
+
+
+        /*
+           Future PDF link will be generated here.
+
+           For now it simply prepares
+           the correct information.
+        */
+
+        card.href =
+            "javascript:void(0)";
+
+
+        card.onclick = function() {
+
+            alert(
+                "Selected: " +
+                course +
+                " | Semester " +
+                semester +
+                " | Subject " +
+                subject +
+                " | Year " +
+                year
+            );
+
+        };
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
