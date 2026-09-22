@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>B.COM Syllabus | Study Portal</title>
+<title>B.Com | Study Portal</title>
 
 <style>
 
@@ -17,104 +17,132 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f7ff;
-    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
 }
 
-.header {
-    background: linear-gradient(135deg, #5b21b6, #2563eb, #06b6d4);
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #172554, #3730a3);
     color: white;
-    padding: 18px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
+    padding: 35px 20px;
     text-align: center;
-    padding: 55px 20px;
-    background: linear-gradient(135deg, #ede9fe, #dbeafe);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
-.hero h1 {
-    font-size: 40px;
-    color: #4f46e5;
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
 }
 
-.hero p {
-    margin-top: 10px;
-    color: #6b7280;
+header p {
+    font-size: 16px;
+    color: #e0e7ff;
 }
 
-.semesters {
-    max-width: 900px;
+/* BACK BUTTON */
+
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #3730a3;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.back:hover {
+    background: #e0e7ff;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1000px;
     margin: 45px auto;
     padding: 0 20px;
+}
 
+/* TITLE */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+/* SEMESTER GRID */
+
+.semester-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
-.semester {
+/* SEMESTER CARD */
+
+.semester-card {
     background: white;
-    padding: 25px;
+    padding: 30px 20px;
     border-radius: 18px;
-    text-decoration: none;
-    color: #172033;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,.08);
-
-    border-left: 6px solid #7c3aed;
-
-    transition: .3s;
-}
-
-.semester:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 30px rgba(0,0,0,.12);
-}
-
-.semester h2 {
-    color: #4f46e5;
-    margin-bottom: 7px;
-}
-
-.semester p {
-    color: #6b7280;
-}
-
-footer {
-    margin-top: 70px;
-    background: #111827;
-    color: #d1d5db;
     text-align: center;
-    padding: 25px;
+    text-decoration: none;
+    color: #172554;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
 }
 
-@media(max-width:650px) {
+.semester-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    background: #eef2ff;
+}
 
-    .header {
-        flex-direction: column;
-        gap: 12px;
+.semester-card .icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.semester-card h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.semester-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 30px;
     }
 
-    .semesters {
+    .semester-grid {
         grid-template-columns: 1fr;
     }
 
+    .section-title h2 {
+        font-size: 26px;
+    }
 }
 
 </style>
@@ -123,79 +151,118 @@ footer {
 
 <body>
 
+<!-- HEADER -->
 
-<header class="header">
+<header>
 
-    <div class="logo">
-        📚 Study Portal
-    </div>
+    <h1>B.Com</h1>
 
-    <nav>
-        <a href="syllabus.html">← Syllabus</a>
-    </nav>
+    <p>Bachelor of Commerce | Study Portal</p>
+
+    <a href="../index.html" class="back">
+        ← Back to Home
+    </a>
 
 </header>
 
 
-<section class="hero">
+<!-- MAIN CONTENT -->
 
-    <h1>💼 B.COM</h1>
+<div class="container">
 
-    <p>
-        Bachelor of Commerce — Semester-wise Syllabus
-    </p>
+    <div class="section-title">
 
-</section>
+        <h2>Select Semester</h2>
 
+        <p>Choose your B.Com semester</p>
 
-<section class="semesters">
-
-
-<a href="#" class="semester">
-    <h2>Semester 1</h2>
-    <p>View B.COM Semester 1 Syllabus →</p>
-</a>
+    </div>
 
 
-<a href="#" class="semester">
-    <h2>Semester 2</h2>
-    <p>View B.COM Semester 2 Syllabus →</p>
-</a>
+    <div class="semester-grid">
 
 
-<a href="#" class="semester">
-    <h2>Semester 3</h2>
-    <p>View B.COM Semester 3 Syllabus →</p>
-</a>
+        <!-- SEMESTER 1 -->
+
+        <a href="Sem-1/index.html" class="semester-card">
+
+            <div class="icon">📘</div>
+
+            <h3>Semester 1</h3>
+
+            <p>B.Com Semester 1</p>
+
+        </a>
 
 
-<a href="#" class="semester">
-    <h2>Semester 4</h2>
-    <p>View B.COM Semester 4 Syllabus →</p>
-</a>
+        <!-- SEMESTER 2 -->
+
+        <a href="Sem-2/index.html" class="semester-card">
+
+            <div class="icon">📗</div>
+
+            <h3>Semester 2</h3>
+
+            <p>B.Com Semester 2</p>
+
+        </a>
 
 
-<a href="#" class="semester">
-    <h2>Semester 5</h2>
-    <p>View B.COM Semester 5 Syllabus →</p>
-</a>
+        <!-- SEMESTER 3 -->
+
+        <a href="Sem-3/index.html" class="semester-card">
+
+            <div class="icon">📕</div>
+
+            <h3>Semester 3</h3>
+
+            <p>B.Com Semester 3</p>
+
+        </a>
 
 
-<a href="#" class="semester">
-    <h2>Semester 6</h2>
-    <p>View B.COM Semester 6 Syllabus →</p>
-</a>
+        <!-- SEMESTER 4 -->
+
+        <a href="Sem-4/index.html" class="semester-card">
+
+            <div class="icon">📙</div>
+
+            <h3>Semester 4</h3>
+
+            <p>B.Com Semester 4</p>
+
+        </a>
 
 
-</section>
+        <!-- SEMESTER 5 -->
+
+        <a href="Sem-5/index.html" class="semester-card">
+
+            <div class="icon">📔</div>
+
+            <h3>Semester 5</h3>
+
+            <p>B.Com Semester 5</p>
+
+        </a>
 
 
-<footer>
+        <!-- SEMESTER 6 -->
 
-    <p>© 2026 Study Portal. All Rights Reserved.</p>
+        <a href="Sem-6/index.html" class="semester-card">
 
-</footer>
+            <div class="icon">📓</div>
 
+            <h3>Semester 6</h3>
+
+            <p>B.Com Semester 6</p>
+
+        </a>
+
+
+    </div>
+
+</div>
 
 </body>
 
