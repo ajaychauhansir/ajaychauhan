@@ -1,69 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>B.Com Question Papers | Study Portal</title>
 
     <link rel="stylesheet" href="question-papers.css">
+
 </head>
+
 
 <body>
 
+
+<!-- ================= HEADER ================= -->
+
 <header class="header">
-    <h1>📊 B.Com Question Papers</h1>
-    <p>Semester-wise previous year question papers</p>
+
+    <h1>
+        📊 B.Com Question Papers
+    </h1>
+
+    <p>
+        Semester-wise previous year question papers
+    </p>
+
 </header>
+
+
+
+<!-- ================= MAIN ================= -->
 
 <main class="container">
 
-    <a href="question-papers.html" class="back">← Back to Courses</a>
+
+    <!-- BACK BUTTON -->
+
+    <a href="question-papers.html" class="back">
+        ← Back to Courses
+    </a>
+
+
+
+    <!-- PAGE TITLE -->
 
     <div class="page-title">
-        <h2>B.Com — Select Semester</h2>
-        <p>Choose your semester to view question papers.</p>
+
+        <h2>
+            B.Com — Select Semester
+        </h2>
+
+        <p>
+            Choose your semester to view question papers.
+        </p>
+
     </div>
+
+
+
+    <!-- ================= SEMESTERS ================= -->
 
     <div class="semester-grid">
 
-        <a href="#" class="semester-card">
-            <div class="semester-number">01</div>
-            <h3>Semester 1</h3>
-        </a>
+
+        <!-- SEMESTER 1 -->
 
         <a href="#" class="semester-card">
-            <div class="semester-number">02</div>
-            <h3>Semester 2</h3>
+
+            <div class="semester-number">
+                01
+            </div>
+
+            <h3>
+                Semester 1
+            </h3>
+
         </a>
 
-        <a href="#" class="semester-card">
-            <div class="semester-number">03</div>
-            <h3>Semester 3</h3>
-        </a>
+
+
+        <!-- SEMESTER 2 -->
 
         <a href="#" class="semester-card">
-            <div class="semester-number">04</div>
-            <h3>Semester 4</h3>
+
+            <div class="semester-number">
+                02
+            </div>
+
+            <h3>
+                Semester 2
+            </h3>
+
         </a>
 
-        <a href="#" class="semester-card">
-            <div class="semester-number">05</div>
-            <h3>Semester 5</h3>
-        </a>
+
+
+        <!-- SEMESTER 3 -->
 
         <a href="#" class="semester-card">
-            <div class="semester-number">06</div>
-            <h3>Semester 6</h3>
+
+            <div class="semester-number">
+                03
+            </div>
+
+            <h3>
+                Semester 3
+            </h3>
+
         </a>
+
+
+
+        <!-- SEMESTER 4 -->
+
+        <a href="#" class="semester-card">
+
+            <div class="semester-number">
+                04
+            </div>
+
+            <h3>
+                Semester 4
+            </h3>
+
+        </a>
+
+
+
+        <!-- SEMESTER 5 -->
+
+        <a href="#" class="semester-card">
+
+            <div class="semester-number">
+                05
+            </div>
+
+            <h3>
+                Semester 5
+            </h3>
+
+        </a>
+
+
+
+        <!-- SEMESTER 6 -->
+
+        <a href="#" class="semester-card">
+
+            <div class="semester-number">
+                06
+            </div>
+
+            <h3>
+                Semester 6
+            </h3>
+
+        </a>
+
 
     </div>
 
+
 </main>
 
+
+
+<!-- ================= FOOTER ================= -->
+
 <footer class="footer">
-    <p>© 2026 Study Portal | Ajay Chauhan</p>
+
+    <p>
+        © 2026 Study Portal | Ajay Chauhan
+    </p>
+
 </footer>
 
+
 </body>
+
 </html>
