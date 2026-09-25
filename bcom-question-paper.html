@@ -25,22 +25,22 @@ body {
 header {
     background: linear-gradient(135deg, #8e24aa, #ab47bc);
     color: white;
-    padding: 30px 15px;
+    padding: 32px 15px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 8px;
 }
 
 header p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .container {
     max-width: 900px;
-    margin: 30px auto;
+    margin: 25px auto;
     padding: 15px;
 }
 
@@ -54,29 +54,55 @@ header p {
     margin-bottom: 25px;
 }
 
-.semester-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+.page-title {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-.semester {
-    display: block;
+.page-title h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.page-title p {
+    color: #666;
+}
+
+.semester-box {
     background: white;
-    padding: 22px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-    text-decoration: none;
-    color: #8e24aa;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.09);
+}
+
+.semester-title {
+    background: linear-gradient(135deg, #8e24aa, #ab47bc);
+    color: white;
+    padding: 18px 20px;
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
-    transition: 0.2s;
 }
 
-.semester:hover {
+.year-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 18px;
+}
+
+.year-card {
+    background: #faf5fc;
+    border: 1px solid #e1bee7;
+    border-radius: 10px;
+    padding: 14px 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #8e24aa;
+}
+
+.year-card:hover {
     background: #f3e5f5;
-    transform: translateY(-2px);
 }
 
 footer {
@@ -88,8 +114,12 @@ footer {
 
 @media (max-width: 600px) {
 
-    .semester-grid {
-        grid-template-columns: 1fr;
+    .year-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 26px;
     }
 
 }
@@ -102,64 +132,27 @@ footer {
 
 <header>
 
-<h1>B.Com Question Papers</h1>
+<h1>📊 B.Com Question Papers</h1>
 
-<p>Bachelor of Commerce | Semester 1 to 6</p>
+<p>Bachelor of Commerce | Semester-wise previous year question papers</p>
 
 </header>
 
 
 <div class="container">
 
-<a href="index.html" class="back">← Back to Home</a>
+<a href="question-papers.html" class="back">← Back to Courses</a>
 
+<div class="page-title">
 
-<div class="semester-grid">
+<h2>B.Com — Select Semester</h2>
 
-
-<!-- SEMESTER 1 -->
-
-<a href="bcom-sem-1-question-papers.html" class="semester">
-Semester 1
-</a>
-
-
-<!-- SEMESTER 2 -->
-
-<a href="bcom-sem-2-question-papers.html" class="semester">
-Semester 2
-</a>
-
-
-<!-- SEMESTER 3 -->
-
-<a href="bcom-sem-3-question-papers.html" class="semester">
-Semester 3
-</a>
-
-
-<!-- SEMESTER 4 -->
-
-<a href="bcom-sem-4-question-papers.html" class="semester">
-Semester 4
-</a>
-
-
-<!-- SEMESTER 5 -->
-
-<a href="bcom-sem-5-question-papers.html" class="semester">
-Semester 5
-</a>
-
-
-<!-- SEMESTER 6 -->
-
-<a href="bcom-sem-6-question-papers.html" class="semester">
-Semester 6
-</a>
-
+<p>Select a semester to view year-wise question papers.</p>
 
 </div>
+
+
+<div id="semester-container"></div>
 
 </div>
 
@@ -170,6 +163,57 @@ Semester 6
 
 </footer>
 
-</body>
 
+<script>
+
+const semesters = 6;
+
+const years = [
+    "2012",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023 NEP",
+    "2024 NEP",
+    "2025 NEP"
+];
+
+const container = document.getElementById("semester-container");
+
+for (let i = 1; i <= semesters; i++) {
+
+    const semesterBox = document.createElement("div");
+
+    semesterBox.className = "semester-box";
+
+    let yearHTML = "";
+
+    years.forEach(year => {
+
+        yearHTML += `<div class="year-card">${year}</div>`;
+
+    });
+
+    semesterBox.innerHTML = `
+
+        <div class="semester-title">
+            Semester ${i}
+        </div>
+
+        <div class="year-grid">
+            ${yearHTML}
+        </div>
+
+    `;
+
+    container.appendChild(semesterBox);
+}
+
+</script>
+
+</body>
 </html>
